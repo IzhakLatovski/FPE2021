@@ -141,6 +141,7 @@ h4 {
 
 .s6 {
   padding-left: 10%;
+  padding-bottom: 2rem;
 }
 .s6 h2 {
   font-size: 3rem;
@@ -160,6 +161,78 @@ h4 {
   max-width: 800px;
 }
 
+.s6 .bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0.5rem;
+}
+
+.s6 .bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 680px) {
+  .s6 .bio-container {
+    justify-content: space-between;
+  }
+  .s6 .bio {
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .s6 .bio-container {
+    justify-content: center;
+  }
+  .s6 .bio {
+    margin: 0 1rem;
+  }
+}
+
+.s6 .bio:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.s6 .bio:hover img {
+  transform: scale(1.05);
+}
+
+.s6 .bio h5 {
+  margin: 0 0 1rem;
+}
+
+.s6 .bio h6 {
+  margin: 1rem 0 0;
+}
+
+.s6 .bio img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.s6 .inner-bio {
+  padding: 1rem;
+}
+
+.s6 .exit {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.s6 #bio-content {
+  border-radius: 5px;
+  background-color: rgb(32, 32, 32);
+  margin-bottom: 3rem;
+}
+
 /*******************************************************************/
 html,
 body {
@@ -169,6 +242,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 input:focus {
