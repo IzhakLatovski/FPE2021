@@ -64,6 +64,6 @@ nicole.addEventListener("click", () => {
 
   const exit = document.querySelector(".exit");
   exit.addEventListener("click", () => {
-    bio.innerHTML = ""
+    bio.innerHTML = "";
   })
 })

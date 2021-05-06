@@ -219,7 +219,7 @@ h4 {
   padding: 1rem;
 }
 
-.s6 .exit {
+.exit {
   font-size: 3rem;
   font-weight: 900;
   margin: 0;
@@ -227,10 +227,16 @@ h4 {
   display: inline-block;
 }
 
-.s6 #bio-content {
+#bio-content {
   border-radius: 5px;
   background-color: rgb(32, 32, 32);
   margin-bottom: 3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+
+  margin: 0 auto;
 }
 
 /*******************************************************************/
