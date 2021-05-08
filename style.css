@@ -147,9 +147,13 @@ h4 {
   font-size: 3rem;
 }
 .s6 h4 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 200;
   margin-bottom: 2rem;
+}
+
+.s6 h4:last-of-type {
+  margin-top: 4rem;
 }
 
 .s6 input {
@@ -161,13 +165,17 @@ h4 {
   max-width: 800px;
 }
 
-.s6 .bio-container {
+.s2 h3 {
+  margin-bottom: 2rem;
+}
+
+.s2 .bio-container {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0.5rem;
 }
 
-.s6 .bio {
+.s2 .bio {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,67 +184,47 @@ h4 {
 }
 
 @media screen and (max-width: 680px) {
-  .s6 .bio-container {
+  .s2 .bio-container {
     justify-content: space-between;
   }
-  .s6 .bio {
+  .s2 .bio {
     margin-right: 1rem;
   }
 }
-@media screen and (max-width: 450px) {
-  .s6 .bio-container {
+@media screen and (max-width: 550px) {
+  .s2 .bio-container {
     justify-content: center;
   }
-  .s6 .bio {
+  .s2 .bio {
     margin: 0 1rem;
   }
 }
 
-.s6 .bio:hover {
+.s2 .bio:hover {
   opacity: 0.8;
   cursor: pointer;
 }
-.s6 .bio:hover img {
+.s2 .bio:hover img {
   transform: scale(1.05);
 }
 
-.s6 .bio h5 {
+.s2 .bio h5 {
   margin: 0 0 1rem;
 }
 
-.s6 .bio h6 {
+.s2 .bio h6 {
   margin: 1rem 0 0;
 }
 
-.s6 .bio img {
+.s2 .bio img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   transition: 0.2s;
 }
 
-.s6 .inner-bio {
+.s2 .inner-bio {
   padding: 1rem;
-}
-
-.exit {
-  font-size: 3rem;
-  font-weight: 900;
-  margin: 0;
-  cursor: pointer;
-  display: inline-block;
-}
-
-#bio-content {
-  border-radius: 5px;
-  background-color: rgb(32, 32, 32);
-  margin-bottom: 3rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 12;
-
-  margin: 0 auto;
 }
 
 /*******************************************************************/

@@ -56,14 +56,4 @@ var TxtRotate = function(el, toRotate, period) {
   };
   
 
-  const nicole = document.querySelector("#nicole-bio");
-  const bio = document.querySelector("#bio-content");
 
-nicole.addEventListener("click", () => {
-  bio.innerHTML = "<div class='inner-bio'><h1>Nicole Sabag</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At cumque reiciendis quia sint cum deserunt doloribus dignissimos, dolor nostrum nam incidunt vero aspernatur, id libero earum perspiciatis qui iure eum. Nicole Sabag</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At cumque reiciendis quia sint cum deserunt doloribus dignissimos, dolor nostrum nam incidunt vero aspernatur, id libero earum perspiciatis qui iure eum.</p><p class='exit'>X</p></div>";
-
-  const exit = document.querySelector(".exit");
-  exit.addEventListener("click", () => {
-    bio.innerHTML = "";
-  })
-})
