@@ -2,7 +2,8 @@
   background-color: black;
 }
 .section:nth-child(2n-1) {
-  background-color: #161515;
+  /* background-color: #161515; */
+  background-color: black;
 }
 
 .fp-tooltip.fp-right {
@@ -46,6 +47,19 @@ span {
   align-items: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   transition: 0.2s;
+}
+
+.icon img {
+  width: 120px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.icon img:hover {
+  transform: scale(1.1);
 }
 
 .icon .circle:hover {
@@ -142,8 +156,9 @@ h4 {
 .s6 {
   padding-left: 10%;
   padding-bottom: 2rem;
+  padding-top: 6rem;
 }
-.s6 h2 {
+h2 {
   font-size: 3rem;
 }
 .s6 h4 {
@@ -173,14 +188,24 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0.5rem;
+  flex-direction: column;
 }
 
 .s2 .bio {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 3rem;
   margin-right: 3rem;
+}
+
+.s2 .bio-head {
+  display: flex;
+  align-items: center;
+}
+
+.s2 .bio-head h5 {
+  font-size: 2.2rem;
 }
 
 @media screen and (max-width: 680px) {
@@ -200,13 +225,13 @@ h4 {
   }
 }
 
-.s2 .bio:hover {
+/* .s2 .bio:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 .s2 .bio:hover img {
   transform: scale(1.05);
-}
+} */
 
 .s2 .bio h5 {
   margin: 0 0 1rem;
@@ -221,6 +246,7 @@ h4 {
   height: 100px;
   border-radius: 50%;
   transition: 0.2s;
+  margin-right: 2rem;
 }
 
 .s2 .inner-bio {
